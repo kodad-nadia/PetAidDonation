@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donation App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#">Donation App</a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="text-content">
+            <section class="description">
+                <h2>Support Our Animal Shelter</h2>
+                <p>Our animal shelter is dedicated to providing a safe haven for stray and abandoned pets. Your donations help us provide food, medical care, and a warm place to stay for these animals. Each contribution brings us one step closer to finding them a loving home. Join us in making a difference in the lives of these animals.</p>
+            </section>
+            <section class="donation-form">
+                <h2>Make a Donation</h2>
+                <form id="donationForm">
+                    <input type="number" id="amount" placeholder="Amount in Wei" required>
+                    <div class="buttons">
+                        <button type="submit">Make a Donation</button>
+                    </div>
+                </form>
+                <div id="message" class="hidden"></div>
+            </section>
+            <section class="donation-list">
+                <h2>Donations Made Successfully</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Donor</th>
+                            <th>Amount (Wei)</th>
+                            <th>DateTime</th>
+                        </tr>
+                    </thead>
+                    <tbody id="donationList"></tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
